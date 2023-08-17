@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "serverless-ml-course"
+version = "0.1.0"
+description = ""
+authors = ["Paul Beckmann <paul.beckmann@rewe-group.com>"]
+readme = "README.md"
+packages = [{include = "serverless_ml_course"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+faker = "^19.3.0"
+parsedatetime = "^2.6"
+hopsworks = "^3.2.0"
+nbconvert = "^7.7.3"
+scikit-learn = "^1.3.0"
+plotly = "^5.16.0"
+pillow = "^10.0.0"
+seaborn = "^0.12.2"
+dataframe-image = "^0.1.11"
+streamlit-folium = "^0.13.0"
+gradio = "^3.40.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
